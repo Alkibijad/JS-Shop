@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+//primari colors
+$Orange: hsl(26, 100%, 55%);
+$PaleOrange: hsl(25, 100%, 94%);
+//Neutral Colors
+
+$VeryDarkBlue: hsl(220, 13%, 13%);
+$DarkGrayishBlue: hsl(219, 9%, 45%);
+$GrayishBlue: hsl(220, 14%, 75%);
+$LightGrayishBlue: hsl(223, 64%, 98%);
+$White: hsl(0, 0%, 100%);
+$Black: hsla(0, 0%, 0%, 0.767);
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: $DarkGrayishBlue;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.login-section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  .login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .vNotification {
+    width: 80%;
+
+    visibility: hidden;
+  }
+}
+
+.sign-in {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  height: 100vh;
+  .singIN-container {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      margin-bottom: 20px;
+    }
+    .signIn-notification {
+      visibility: hidden;
+    }
+  }
+}
+
+.shop-page {
+  // display: none;
+  .navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    .navbar-list {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      li {
+        list-style: none;
+        padding: 10px 15px;
+      }
+    }
+    .userID {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+  }
+}
+
+.shop-items{
+  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+    .item-container{
+      border: 1px solid white;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        width: 400px;
+        text-align: center;
+      }
+      .image-container{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px 0;
+        img{
+          width: 200px;
+          height: 200px;
+          
+        }
+      }
+      
+    }
+  
+
+  }

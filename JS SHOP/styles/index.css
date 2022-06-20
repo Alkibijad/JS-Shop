@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #68707d;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.login-section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.login-section .login {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.login-section .vNotification {
+  width: 80%;
+  visibility: hidden;
+}
+
+.sign-in {
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.sign-in .singIN-container {
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-in .singIN-container input {
+  margin-bottom: 20px;
+}
+
+.sign-in .singIN-container .signIn-notification {
+  visibility: hidden;
+}
+
+.shop-page .navbar {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop-page .navbar .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-page .navbar .navbar-list li {
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.shop-page .navbar .userID {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.shop-items {
+  border: 5px solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.shop-items .item-container {
+  border: 1px solid white;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-items .item-container p {
+  width: 400px;
+  text-align: center;
+}
+
+.shop-items .item-container .image-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px 0;
+}
+
+.shop-items .item-container .image-container img {
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */

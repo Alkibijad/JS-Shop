@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="login-section">
+      <div class="login">
+        <input
+          oninput="checkLogin()"
+          name="firstName"
+          class="iFirstName"
+          type="text"
+          placeholder="First Name"
+        />
+        <p class="vNotification vFirstName">First Name is requred</p>
+        <input
+            name="lastname"
+          oninput="checkLogin()"
+          class="iLastName"
+          type="text"
+          placeholder="Last Name"
+        />
+        <p class="vNotification vLastName">Last Name is requred</p>
+
+        <input
+        name="email"
+          oninput="checkLogin()"
+          class="iEmail"
+          type="email"
+          placeholder="Email"
+        />
+        <p class="vNotification vEmail">E-Mail is requred</p>
+
+        <input
+          oninput="checkLogin()"
+          class="iPassword"
+          type="password"
+          placeholder="Password"
+        />
+        <p class="vNotification vPassword">Password must be min 6 characters</p>
+        <button class="btnLogin" type="button" disabled>Log In</button>
+      </div>
+    </section>
+
+    <section class="sign-in">
+        <div class="singIN-container">
+          <input class="signInEmail" oninput="signUser()" type="text" placeholder="email">
+          <input class="signInPassword" oninput="signUser()" type="text" placeholder="Password">
+          <p class="signIn-notification">Email or password do not match</p>
+          <button class="btnSignIN" disabled>Sign in</button>
+        </div>
+    </section>
+
+    <section class="shop-page">
+      <div class="navbar">
+        <ul class="navbar-list"></ul>
+        <p class="userID"></p>
+    </div>
+
+    <div class="shop-items"></div>
+    </section>
+      
+
+
+
+    <script src="login.js"></script>
+    <script src="ajax.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
