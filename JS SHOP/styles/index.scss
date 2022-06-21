@@ -21,7 +21,7 @@ body,
 html {
   font-size: 16px;
   font-family: "Kumbh Sans", sans-serif;
-  background-color: $DarkGrayishBlue;
+  
 }
 
 button {
@@ -37,6 +37,10 @@ input {
 }
 
 .login-section {
+  background-image: url(../images/Nike-bg-landingPage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -51,7 +55,6 @@ input {
   }
   .vNotification {
     width: 80%;
-
     visibility: hidden;
   }
 }
@@ -78,7 +81,7 @@ input {
 }
 
 .shop-page {
-  // display: none;
+  display: none;
   .navbar {
     width: 100vw;
     display: flex;

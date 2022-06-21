@@ -1,8 +1,8 @@
-//current View
+//views
 let loginSection = document.querySelector(".login-section");
 let signIn = document.querySelector(".sign-in");
 let shopPage = document.querySelector('.shop-page');
-
+//input 
 let iFirstName = document.querySelector(".iFirstName");
 let iLastName = document.querySelector(".iLastName");
 let iEmail = document.querySelector(".iEmail");
@@ -47,7 +47,6 @@ function signUser() {
     signInNotification.style.visibility = "visible";
   }
 }
-
 function takeMeToShopPage(userCredentials) {
   let userID = document.querySelector('.userID');
   userID.innerHTML = `<h4>Hello, ${userCredentials.firstName}</h4>`
@@ -56,7 +55,6 @@ function takeMeToShopPage(userCredentials) {
       shopPage.style.display = "block"
   });
 }
-
 function checkLogin() {
   if (iFirstName.value.length < 3) {
     vFirstName.style.visibility = "visible";
@@ -101,6 +99,7 @@ function saveUserLogin() {
     btnLogin.disabled = true;
   }
 }
+
 btnLogin.addEventListener("click", function () {
   localStorage.setItem("userLogIn", JSON.stringify(userLogin));
   loginSection.style.display = "none";
