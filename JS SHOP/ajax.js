@@ -1,11 +1,14 @@
 let xml = new XMLHttpRequest();
-xml.open("get", "https://raw.githubusercontent.com/Alkibijad/webShop_fake_db/main/products.json")
 
-xml.onreadystatechange = () => { 
-    if (xml.readyState === 4 && xml.status === 200) {
+xml.open(
+  "get",
+  "https://raw.githubusercontent.com/Alkibijad/webShop_fake_db/main/nike.json"
+);
 
-        webShop(JSON.parse(xml.responseText))
-        
-    }
-}
-xml.send()
+xml.onreadystatechange = () => {
+  if (xml.readyState == 4 && xml.status == 200) {
+    shop(JSON.parse(xml.responseText));
+  }
+};
+
+xml.send();

@@ -5,72 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./components/slideshow/slideshow.css" />
+    <title>Nike</title>
   </head>
   <body>
-    <section class="login-section">
-      <div class="login">
-          
-        <input
-          oninput="checkLogin()"
-          name="firstName"
-          class="iFirstName"
-          type="text"
-          placeholder="First Name"
-        />
-        <p class="vNotification vFirstName">First Name is requred</p>
-        <input
-            name="lastname"
-          oninput="checkLogin()"
-          class="iLastName"
-          type="text"
-          placeholder="Last Name"
-        />
-        <p class="vNotification vLastName">Last Name is requred</p>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <svg
+            class="pre-logo-svg"
+            height="30px"
+            width="80px"
+            fill="#111"
+            viewBox="0 0 69 32"
+          >
+            <path
+              d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+            ></path></svg
+        ></a>
+      </div>
+      <div class="navbar_items_container">
+        <ul class="navbar-list">
+          <li class="list-item" data-name="NewFeatures">New & Fearured</li>
+          <li class="list-item" data-name="Men">Men</li>
+          <li class="list-item" data-name="Woman">Woman</li>
+          <li class="list-item" data-name="Kids">Kids</li>
+          <li class="list-item" data-name="Sale">Sale</li>
+        </ul>
+      </div>
 
-        <input
-        name="email"
-          oninput="checkLogin()"
-          class="iEmail"
-          type="email"
-          placeholder="Email"
-        />
-        <p class="vNotification vEmail">E-Mail is requred</p>
+      <div class="login-options-navbar">
+        <p>Help</p>
+        <p class="btn-signUP">Sign Up</p>
+        <p class="btn-LogIn">Log In</p>
+      </div>
+    </div>
 
+    <!-- section -->
+
+    <div class="slideShow">
+      <p class="promoText"></p>
+    </div>
+
+    <!-- section signUP -->
+    <section class="section-signUP">
+      <div class="sidnUP-container">
+        <svg
+          class="pre-logo-svg"
+          height="60px"
+          width="60px"
+          fill="#111"
+          viewBox="0 0 69 32"
+        >
+          <path
+            d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+          ></path>
+        </svg>
+        <h2>
+          your account for<br />
+          everything nike
+        </h2>
         <input
-          oninput="checkLogin()"
-          class="iPassword"
+          type="text"
+          placeholder="email"
+          name="email"
+          class="signUp-email"
+          oninput="{createUserAccount()}"
+        />
+        <p class="signUP_notification v_signUP_email">
+          Please enter proper email address
+        </p>
+        <input
           type="password"
-          placeholder="Password"
+          placeholder="password"
+          name="password"
+          class="signUp-password"
+          oninput="{createUserAccount()}"
         />
-        <p class="vNotification vPassword">Password must be min 6 characters</p>
-        <button class="btnLogin" type="button" disabled>Create Account</button>
+        <p class="signUP_notification v_signUP_password">
+          Password must be at least 8 characters long
+        </p>
+
+        <p class="terms_and_policy">
+          By logging in, you agree to Nike's Privacy Policy and Terms of Use.
+        </p>
+        <button class="btn_SignUP" disabled>Sign up</button>
       </div>
     </section>
 
-    <section class="sign-in">
-        <div class="singIN-container">
-          <input class="signInEmail" oninput="signUser()" type="text" placeholder="email">
-          <input class="signInPassword" oninput="signUser()" type="text" placeholder="Password">
-          <p class="signIn-notification">Email or password do not match</p>
-          <button class="btnSignIN" disabled>Sign in</button>
+    <!-- section logIn -->
+
+    <section class="section-login">
+      <div class="login-container">
+        <svg
+          class="pre-logo-svg"
+          height="60px"
+          width="60px"
+          fill="#111"
+          viewBox="0 0 69 32"
+        >
+          <path
+            d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+          ></path>
+        </svg>
+        <h4>Please login to shop</h4>
+
+        <input
+          class="input_login_email"
+          name="email"
+          type="email"
+          placeholder="email"
+        />
+        <p class="login_notification login_email_notification">
+          Email is not correct
+        </p>
+
+        <input
+          class="input_login_pass"
+          type="password"
+          placeholder="password"
+        />
+        <p class="login_notification login_pass_notification">
+          Password is not correct
+        </p>
+
+        <div class="checkbox">
+          <input id="checkbox" type="checkbox" />
+          <p>Stay logged</p>
         </div>
+
+        <button class="btnLogin">Log in</button>
+      </div>
     </section>
 
-    <section class="shop-page">
-      <div class="navbar">
-        <ul class="navbar-list"></ul>
-        <p class="userID"></p>
-    </div>
-
-    <div class="shop-items"></div>
+    <section class="section_shop_adds">
+      <h1>shop adds</h1>
     </section>
-      
+
+   
+ 
 
 
+    <section class="shop_section" id="NewFeatures"></section>
+    <section class="shop_section" id="Men"></section>
+    <section class="shop_section" id="Woman"></section>
+    <section class="shop_section" id="Kids"></section>
+    <section class="shop_section" id="Sale"></section>
 
+
+    <script src="./components/slideshow/slideShow.js"></script>
     <script src="login.js"></script>
+    <script src="sign_up_form.js"></script>
     <script src="ajax.js"></script>
-    <script src="index.js"></script>
+    <script src="shop.js"></script>
   </body>
 </html>

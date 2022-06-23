@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,36 +8,121 @@
 
 body,
 html {
-  font-size: 16px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 10px;
-}
-
-input {
+body input,
+html input {
+  height: 35px;
   width: 80%;
-  padding: 5px;
-  margin-bottom: 5px;
-  border: none;
 }
 
-.login-section {
-  background-image: url(../images/Nike-bg-landingPage.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
+body input::-webkit-input-placeholder,
+html input::-webkit-input-placeholder {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+body input:-ms-input-placeholder,
+html input:-ms-input-placeholder {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+body input::-ms-input-placeholder,
+html input::-ms-input-placeholder {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+body input::placeholder,
+html input::placeholder {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+body button,
+html button {
+  width: 80%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar {
+  width: 90vw;
   margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 6fr 3fr;
+      grid-template-columns: 3fr 6fr 3fr;
 }
 
-.login-section .login {
-  width: 50%;
-  height: 100%;
+.navbar .navbar_items_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.navbar .navbar_items_container .navbar-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar_items_container .navbar-list li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.navbar .login-options-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .login-options-navbar p {
+  font-weight: 200;
+  margin: 0 10px;
+}
+
+.section-signUP {
+  height: 80vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-signUP .sidnUP-container {
+  width: 500px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,23 +136,47 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
-.login-section .vNotification {
+.section-signUP .sidnUP-container svg {
+  margin-bottom: 10px;
+}
+
+.section-signUP .sidnUP-container h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.section-signUP .sidnUP-container .terms_and_policy {
+  text-align: center;
+  font-weight: 300;
+  padding: 10px 0;
   width: 80%;
+  color: #aaaaaa;
+}
+
+.section-signUP .signUP_notification {
   visibility: hidden;
 }
 
-.sign-in {
+.section-login {
   display: none;
-  width: 50%;
-  margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sign-in .singIN-container {
-  height: 100%;
+.section-login .login-container {
+  width: 500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,29 +193,26 @@ input {
           align-items: center;
 }
 
-.sign-in .singIN-container input {
-  margin-bottom: 20px;
+.section-login .login-container h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 20px;
 }
 
-.sign-in .singIN-container .signIn-notification {
+.section-login .login-container button {
+  margin-top: 20px;
+}
+
+.section-login .login-container .login_notification {
   visibility: hidden;
 }
 
-.shop-page {
-  display: none;
-}
-
-.shop-page .navbar {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.shop-page .navbar .navbar-list {
+.section-login .login-container .checkbox {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,36 +224,33 @@ input {
           align-items: center;
 }
 
-.shop-page .navbar .navbar-list li {
-  list-style: none;
-  padding: 10px 15px;
+.section-login .login-container .checkbox input {
+  width: 20px;
 }
 
-.shop-page .navbar .userID {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
+.section-login .login-container .checkbox p {
+  margin-left: 5px;
 }
 
-.shop-items {
-  border: 5px solid red;
+.section_shop_adds {
+  display: block;
+}
+
+.shop_section {
+  padding: 50px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shop_section .selected-products {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  width: 100%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.shop-items .item-container {
-  border: 1px solid white;
-  margin: 20px;
+.shop_section .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,28 +258,55 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.shop-items .item-container p {
-  width: 400px;
-  text-align: center;
+.shop_section .product button {
+  width: 55%;
+  border-radius: 20px;
 }
 
-.shop-items .item-container .image-container {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  margin: 20px 0;
+.shop_section .product .addToCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+  padding: 5px;
 }
 
-.shop-items .item-container .image-container img {
-  width: 200px;
-  height: 200px;
+.shop_section a {
+  text-decoration: none;
+  color: white;
+}
+
+#NewFeatures {
+  display: none;
+}
+
+#Men {
+  display: none;
+}
+
+#Woman {
+  display: none;
+}
+
+#Kids {
+  display: none;
+}
+
+#Sale {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
