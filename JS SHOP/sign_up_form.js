@@ -17,7 +17,6 @@ let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 btnSignUP.addEventListener("click", function () { 
     signUpForm.style.display = "flex"
     btnSignUP.style.display = "none";
-
     shopAddsView.style.display = "none"
 
 })
