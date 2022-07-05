@@ -44,11 +44,16 @@ html input::placeholder {
 
 body button,
 html button {
-  width: 80%;
   height: 40px;
   background-color: black;
   color: white;
   text-transform: uppercase;
+}
+
+body a,
+html a {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar {
@@ -235,6 +240,103 @@ html button {
 
 .section_shop_adds {
   display: block;
+}
+
+.section_shop_adds .section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section_shop_adds .section-1 h2 {
+  font-size: 60px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.section_shop_adds .section-1 p {
+  padding: 20px 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.section_shop_adds .section-1 .image-box {
+  width: 2000px;
+  max-width: 90%;
+}
+
+.section_shop_adds .section-1 .image-box img {
+  width: 100%;
+}
+
+.section_shop_adds .section-1 button {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.section_shop_adds .section-1 button a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.section_shop_adds .section-2 h3 {
+  max-width: 90%;
+  width: 2000px;
+  margin: 0 auto;
+}
+
+.section_shop_adds .section-2 .content-container {
+  height: 1000px;
+  width: 2000px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.section_shop_adds .section-2 .content-container .left-content {
+  width: 100%;
+  background-image: url(../images/img-4.webp);
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.section_shop_adds .section-2 .content-container .right-content {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.section_shop_adds .section-2 .content-container .right-content .image-top {
+  height: 100%;
+  background-image: url(../images/img-5.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.section_shop_adds .section-2 .content-container .right-content .image-bottom {
+  height: 100%;
+  background-image: url(../images/img-6.webp);
+  background-position: center;
+  background-size: cover;
 }
 
 .shop_section {
