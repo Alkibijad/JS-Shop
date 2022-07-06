@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./components/slideshow/slideshow.css" />
+    <title>Nike</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html" >
+          <svg
+            class="pre-logo-svg"
+            height="30px"
+            width="80px"
+            fill="#111"
+            viewBox="0 0 69 32"
+          >
+            <path
+              d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+            ></path></svg
+        ></a>
+      </div>
+      <div class="navbar_items_container">
+        <ul class="navbar-list">
+          <li class="list-item" data-name="NewFeatures">New & Fearured</li>
+          <li class="list-item" data-name="Men">Men</li>
+          <li class="list-item" data-name="Woman">Woman</li>
+          <li class="list-item" data-name="Kids">Kids</li>
+          <li class="list-item" data-name="Sale">Sale</li>
+        </ul>
+      </div>
+
+      <div class="login-options-navbar">
+        <svg class="shop_cart" width="24px" height="24px" fill="#111" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg>
+        <p class="btn-signUP">Sign Up</p>
+        <p class="btn-LogIn">Log In</p>
+      </div>
+    </div>
+    <!-- section -->
+
+    <div class="slideShow">
+      <p class="promoText"></p>
+    </div>
+
+    <!-- section signUP -->
+    <section class="section-signUP">
+      <div class="sidnUP-container">
+        <svg
+          class="pre-logo-svg"
+          height="60px"
+          width="60px"
+          fill="#111"
+          viewBox="0 0 69 32"
+        >
+          <path
+            d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+          ></path>
+        </svg>
+        <h2>
+          your account for<br />
+          everything nike
+        </h2>
+        <input
+          type="text"
+          placeholder="email"
+          name="email"
+          class="signUp-email"
+          oninput="{createUserAccount()}"
+        />
+        <p class="signUP_notification v_signUP_email">
+          Please enter correct E-Mail. 
+        </p>
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          class="signUp-password"
+          oninput="{createUserAccount()}"
+        />
+        <p class="signUP_notification v_signUP_password">
+          Password must be at least 8 characters long
+        </p>
+
+        <p class="terms_and_policy">
+          By logging in, you agree to Nike's Privacy Policy and Terms of Use.
+        </p>
+        <button class="btn_SignUP" disabled>Sign up</button>
+      </div>
+    </section>
+
+    <!-- section logIn -->
+
+    <section class="section-login">
+      <div class="login-container">
+        <svg
+          class="pre-logo-svg"
+          height="60px"
+          width="60px"
+          fill="#111"
+          viewBox="0 0 69 32"
+        >
+          <path
+            d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+          ></path>
+        </svg>
+        <h4>Please login to shop</h4>
+
+        <input
+          class="input_login_email"
+          name="email"
+          type="email"
+          placeholder="email"
+        />
+        <p class="login_notification login_email_notification">
+          Email is not correct
+        </p>
+
+        <input
+          class="input_login_pass"
+          type="password"
+          placeholder="password"
+        />
+        <p class="login_notification login_pass_notification">
+          Password is not correct
+        </p>
+
+        <div class="checkbox">
+          <input id="checkbox" type="checkbox" />
+          <p>Stay logged</p>
+        </div>
+
+        <button class="btnLogin">Log in</button>
+      </div>
+    </section>
+    <!-- landing page TODO: add shoping adds -->
+    <section class="section_shop_adds">
+        <div class="section-1">
+          <div class="image-box">
+
+            <img src="./images/img-1.webp" alt="">
+          </div>
+         
+            <h2>IN PEG WE TRUST</h2>
+            <p>Introducing the New Nike Air Pegasus 39</p>
+            <button><a href="https://www.nike.com/w/pegasus-8nexh">Shop</a></button>
+
+
+        
+        </div>
+        <div class="section-2">
+          <h3>More fom Nike Running</h3>
+          <div class="content-container">
+            <div class="left-content">
+           
+              <!-- <div class="img-content">
+                <p>Running Apparel</p>
+                <button>Shop</button>
+              </div> -->
+            </div>
+            <div class="right-content">
+              <div class="image-top">
+             
+              </div>
+              <div class="image-bottom">
+              
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        
+         
+        
+    </section>
+
+    <!-- section shoping cart -->
+    <section class="section_shoping_cart">
+      <div class="shoping_cart">
+        <p>no item</p>
+      </div>
+    </section>
+
+ 
+
+    <section class="shop_section" id="NewFeatures"></section>
+    <section class="shop_section" id="Men"></section>
+    <section class="shop_section" id="Woman"></section>
+    <section class="shop_section" id="Kids"></section>
+    <section class="shop_section" id="Sale"></section>
+
+
+    <script src="./components/slideshow/slideShow.js"></script>
+    <script src="login.js"></script>
+    <script src="sign_up_form.js"></script>
+    <script src="ajax.js"></script>
+    <script src="shop.js"></script>
+    <script src="shopingCart.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="state.js"></script>
+  </body>
+</html>
