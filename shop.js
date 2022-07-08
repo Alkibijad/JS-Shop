@@ -2,6 +2,7 @@ function shop(data) {
   let navbarBtns = document.querySelectorAll(".list-item");
   let shopSection = document.querySelectorAll(".shop_section");
   let shopingCart = document.querySelector(".shoping_cart");
+  let shopAdds = document.querySelector(".section_shop_adds");
   let sectionID = "";
   let selectedOption = [];
   let displaySection = "";
@@ -48,6 +49,7 @@ function shop(data) {
     sectionID = this.getAttribute("data-name");
     displaySection = document.querySelector(`#${sectionID}`);
     displaySection.style.display = "block";
+    shopAdds.style.display = "none";
     getSelectedOptions();
   }
 
@@ -76,17 +78,14 @@ function shop(data) {
     currentShop.innerHTML = text;
 
     //select all add to cart button on this section
-    let currentSection = document.getElementById(sectionID)
-    let sectionBTNS = currentSection.querySelectorAll(
-      ".selected-products .product .addToCart .btnAdd"
-    );
+    let currentSection = document.getElementById(sectionID);
+    let sectionBTNS = currentSection.querySelectorAll(".btnAdd");
 
     for (let i = 0; i < sectionBTNS.length; i++) {
-      sectionBTNS[i].addEventListener("click", function () { 
-        addToCart(cart, checkCart, selectedOption, sectionID, this);
-
-      })
-      
+      sectionBTNS[i].addEventListener("click", function () {
+        addToCart(cart, checkCart, selectedOption, this);
+        console.log(this);
+      });
     }
 
     //last bracket

@@ -1,6 +1,10 @@
 function addToCart(cart, checkCart, selectedOption, self) {
 
-  let selectedProduct = self.parentElement.parentElement.id;
+  let selectedProduct = self.parentElement.parentElement.id
+
+
+
+
   let isInTheCart = cart.findIndex((el) => {
     return el.title === selectedOption[selectedProduct].title;
   });
