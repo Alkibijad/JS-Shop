@@ -67,10 +67,10 @@ function shop(data) {
       text += `<div class="product" id=${i} data-source=${selectedOption[i].source}>
                   <img src=${selectedOption[i].img} alt="">
                   <p>${selectedOption[i].title}</p>
-                  <button>  <a href="${selectedOption[i].url}">See More</a></button>
+                  <button class="btnBlack">  <a href="${selectedOption[i].url}">See More</a></button>
                   <div class="addToCart">
                         <p>${selectedOption[i].price}</p>
-                        <button class="btnAdd">Add To Card</button>
+                        <button class="btnAdd btnBlack">Add To Card</button>
                   </div>
       </div>`;
     }
