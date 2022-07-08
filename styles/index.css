@@ -30,7 +30,6 @@ html input::placeholder {
 }
 body button,
 html button {
-  height: 40px;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -185,6 +184,8 @@ html a {
 .section_shop_adds .section-1 button {
   width: 200px;
   border-radius: 20px;
+  font-size: 20px;
+  padding: 15px 25px;
 }
 .section_shop_adds .section-1 button a {
   text-decoration: none;
@@ -285,6 +286,38 @@ html a {
   letter-spacing: 2px;
   font-weight: 600;
 }
+.section_shop_adds .section-3 {
+  width: 2000px;
+  max-width: 90%;
+  margin: 100px auto;
+  height: 500px;
+  background: url(../images/img_7.webp) center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section_shop_adds .section-3 .content_containerr {
+  height: 400px;
+  padding: 20px;
+}
+.section_shop_adds .section-3 .content_containerr h2 {
+  text-transform: uppercase;
+  font-size: 100px;
+}
+.section_shop_adds .section-3 .content_containerr p {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.section_shop_adds .section-3 .content_containerr button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 15px 25px;
+  font-size: 20px;
+}
 
 .shop_section {
   padding: 50px 0;
@@ -333,7 +366,6 @@ html a {
 }
 .section_shoping_cart .item_in_cart .details {
   width: 50%;
-  border: 1px solid red;
 }
 .section_shoping_cart .item_in_cart .details .number_of_items {
   display: flex;
